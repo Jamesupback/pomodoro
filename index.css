@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    background:black;
+    color:white;
+  }
+  header{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5em;
+  }
+  #main{
+    margin:auto;
+    padding-top: 80px;
+    text-align: center;
+  }
+  #times{
+    display: flex;
+    justify-content:space-evenly
+  }
+  #break,#session{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:3px solid green;
+    background: #1a1a1a;
+    border-radius:10px;
+    width: 200px;
+    flex-direction: column;
+    row-gap: 10px;
+
+  }
+  #break-label,#session-label,#timer-label{
+    grid-column:1/span 3;
+    font-size:1.3em;
+  }
+  #session-length,#break-length{
+    font-size:1.5em;
+  }
+  #timer{
+    padding-top: 10px;
+    border:3px solid green;
+    background:#151515;
+    border-radius: 20px;
+    margin:auto;
+    width:300px;
+    height:150px;
+    
+  }
+  #time-left{
+    font-size: 2em;
+  }
+  button{
+    background:transparent;
+    border:none;
+    transition:0.5 ease
+  }
+i.bi-arrow-up-circle{
+  font-size: 1.8em;
+  color:greenyellow
+}
+i.bi-arrow-down-circle{
+  font-size: 1.8em;
+  color:red;
+}
+i.bi-arrow-clockwise,i.bi-play-fill,i.bi-pause-fill{
+  font-size:1.3em;
+}
+i.bi-alarm{
+  font-size: 2em;
+  
+}
+#session-increment:active,#sesssion-decrement:active,#break-increment:active,#break-decrement:active{
+  transform: scale(1.2);
+}
